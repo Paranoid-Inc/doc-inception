@@ -33,5 +33,6 @@ It may involve connecting hardware to chips on your motherboard.
 
 - [OS](./os/OS.md)
 - [Development environment](./dev/Development%20Environment.md)
-    - [Compilers](./dev/Compilers.md
+    - [Compilers](./dev/Compilers.md)
+- [Applications](./apps/Applications.md)
 
