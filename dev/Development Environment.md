@@ -20,27 +20,5 @@ job in Gitlab or commits on non-release branches adding "extra" features.
 Grab a release from [here](https://github.com/msys2/msys2-installer/releases)
 and install it.
 
-Once installed, let's configure git.
-
-```bash
-$ pacman -S git vim openssh
-$ mkdir -p ~/.ssh && chmod 700 ~/.ssh
-$ touch ~/.ssh/config && chmod 600 ~/.ssh/config
-$ ssh-keygen -o -a 100 -t ed25519 # Follow prompts to generate your key and set a password
-$ vim ~/.ssh/config
-```
-
-Add the following to avoid firewall issues/configuration when using git 
-over SSH.
-
-```
-Host github.com
-        HostName ssh.github.com
-        User git
-        Port 443
-        IdentitiesOnly yes
-        IdentityFile ~/.ssh/id_ed25519 # or whatever you output the file as
-        Compression yes
-```
-
+See [Applications/MSYS2](../apps/MSYS2.md) for installation instructions.
 
